@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "description": "Read and Edit ID3 tags",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "browser-id3-writer": "^3.0.3",
+    "musicmetadata": "^2.0.5",
+    "remove-id3v1": "^1.1.0"
+  },
+  "devDependencies": {
+    "jasmine": "^2.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,7 +21,7 @@
     "url": "git+https://github.com/alchen/ID3-Editor.git"
   },
   "author": "Alexander Chen",
-  "license": "AGPL",
+  "license": "AGPL-3.0",
   "bugs": {
     "url": "https://github.com/alchen/ID3-Editor/issues"
   },
