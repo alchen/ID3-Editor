@@ -11,7 +11,7 @@ describe('ID3 Editor', () => {
     const coverPicture = fs.readFileSync(path.join(assetFolder, 'sample.jpg'));
 
     editor.load(songBuffer).then(() => {
-      const got = editor.getMetadata();
+      const got = editor.getTag();
       const expected = {
         title: 'song title',
         track: '5/10',
@@ -57,7 +57,7 @@ describe('ID3 Editor', () => {
     }).then(() => {
       const secondEditor = new Editor();
       secondEditor.load(editor.buffer).then(() => {
-        const got = secondEditor.getMetadata();
+        const got = secondEditor.getTag();
         const expected = {
           title: 'new song',
           track: 2,
