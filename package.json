@@ -2,19 +2,20 @@
   "name": "id3-editor",
   "version": "1.0.0",
   "description": "Read and Edit ID3 tags",
-  "main": "index.js",
+  "main": "lib",
   "dependencies": {
     "browser-id3-writer": "^3.0.3",
-    "musicmetadata": "^2.0.5",
+    "music-metadata": "^0.8.7",
     "remove-id3v1": "^1.1.0"
   },
   "devDependencies": {
-    "jasmine": "^2.9.0",
+    "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0"
+    "eslint-plugin-import": "^2.8.0",
+    "jasmine": "^2.9.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
