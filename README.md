@@ -2,7 +2,7 @@
 
 Read and write ID3 tags with just one library.
 
-This library is a thin wrapper around [music-metadata](https://github.com/Borewit/music-metadata) and [browser-id3-writer](https://github.com/egoroof/browser-id3-writer), and provide read and write support over some basic id3 fields to allow easier edits.
+This library is a thin wrapper around [jsmediatags](https://github.com/aadsm/jsmediatags) and [browser-id3-writer](https://github.com/egoroof/browser-id3-writer), and provide read and write support over some basic id3 fields to allow easier edits.
 
 ## Usage
 

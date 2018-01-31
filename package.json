@@ -5,7 +5,7 @@
   "main": "lib",
   "dependencies": {
     "browser-id3-writer": "^3.0.3",
-    "music-metadata": "^0.8.7",
+    "jsmediatags": "^3.8.1",
     "remove-id3v1": "^1.1.0"
   },
   "devDependencies": {
