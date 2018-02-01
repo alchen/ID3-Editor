@@ -22,7 +22,7 @@ describe('ID3 Editor', () => {
         label: 'label name',
         artists: ['artist 1', 'artist 2'],
         composers: ['composer 1', 'composer 2'],
-        genre: ['genre 1;genre 2'],
+        genres: ['genre 1', 'genre 2'],
         picture: {
           type: 3,
           description: '',
@@ -58,7 +58,7 @@ describe('ID3 Editor', () => {
         .set('label', 'Nutrition Facts')
         .set('artists', ['artist 1', 'artist 2', 'artist 3'])
         .set('composers', ['only composer'])
-        .set('genre', ['jpop', 'post rock']);
+        .set('genres', ['jpop', 'post rock']);
       return editor.save();
     }).then(() => {
       const secondEditor = new Editor();
@@ -74,7 +74,7 @@ describe('ID3 Editor', () => {
           label: 'Nutrition Facts',
           artists: ['artist 1', 'artist 2', 'artist 3'],
           composers: ['only composer'],
-          genre: ['jpop;post rock'],
+          genres: ['jpop', 'post rock'],
           picture: {
             type: 3,
             description: '',
