@@ -27,6 +27,7 @@ describe('ID3 Editor', () => {
           type: 3,
           description: '',
           data: coverPicture,
+          useUnicodeEncoding: false,
         },
         readonly: {},
         lyrics: {
@@ -79,6 +80,7 @@ describe('ID3 Editor', () => {
             type: 3,
             description: '',
             data: coverPicture,
+            useUnicodeEncoding: false,
           },
           readonly: {},
           lyrics: {
@@ -92,6 +94,19 @@ describe('ID3 Editor', () => {
       }).catch((err) => {
         fail(err);
       });
+    }).catch((err) => {
+      fail(err);
+    });
+  });
+
+  it('should preserve original tag', (done) => {
+    const editor = new Editor();
+    const songBuffer = fs.readFileSync(path.join(assetFolder, 'sample.mp3'));
+
+    editor.load(songBuffer).then(() => editor.save()).then(() => {
+      const anotherBuffer = fs.readFileSync(path.join(assetFolder, 'sample.mp3'));
+      expect(editor.buffer.byteLength).toEqual(anotherBuffer.byteLength);
+      done();
     }).catch((err) => {
       fail(err);
     });

@@ -4,7 +4,7 @@
   "description": "Read and Edit ID3 tags",
   "main": "lib",
   "dependencies": {
-    "browser-id3-writer": "^3.0.3",
+    "browser-id3-writer": "^4.0.0",
     "jsmediatags": "^3.8.1",
     "remove-id3v1": "^1.1.0"
   },

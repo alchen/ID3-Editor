@@ -90,9 +90,9 @@ brace-expansion@^1.1.7:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
 
-browser-id3-writer@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/browser-id3-writer/-/browser-id3-writer-3.0.3.tgz#a0adfd4417bfb997b551cc1cffb53755aed82259"
+browser-id3-writer@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/browser-id3-writer/-/browser-id3-writer-4.0.0.tgz#daadf495c62c50fb849f17ccbd6861ddeeac3571"
 
 builtin-modules@^1.0.0, builtin-modules@^1.1.1:
   version "1.1.1"
